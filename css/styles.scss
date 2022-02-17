@@ -1,3 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap');
+
+$primary-color:#26a5d3;
+$dark:#333333;
+$light:#f4f4f4;
+
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body{
-    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:$dark;
+    background-color: $light;
+}
+
+//typography
+h1 ,h2, h3, h4, h5, h6{
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family:'Montserrat','Lexend Deca', sans-serif;
+    letter-spacing: 1px;
+}
+p{
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.6em;
+
+}
+a{
+    color: $primary-color;
+
+}
+a:hover, a:focus{
+    text-decoration: none;
+    color: darken($color:$primary-color, $amount:20%);
+}
+//navigation
+.navbar{
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 3);
+    text-transform: uppercase;
+    font-family: 'Montserrat','Lexend Deca', sans-serif;
+    background-color:$dark ;
+}
+.navbar-brand{
+    font-weight: 700;
+    padding-left: 50px;
+
+}
+.navbar-brand:focus{
+    font-weight: 700;
+    outline: none;
+    
+}
+.navbar-custom a{
+    color: $light;
+
+}
+.navbar-custom .navbar-nav li a{
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .navbar-nav li a:hover{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-toggle{
+    padding: 4px 6px;
+    font-size: 16px;
+    color: $light;
+}
+@media(min-width:768px){
+    .navbar{
+        padding: 20px 0;
+        border-bottom: none;
+        background: transparent;
+        -webkit-transition: background .5s ease-in-out, padding 0.5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding 0.5s ease-in-out;
+        transition: background .5s ease-in-out, padding 0.5s ease-in-out;
+    
+
+    }
+
+    .top-nav-collapse{
+        padding: 0;
+        background-color: $dark;
+    }
+    .navbar-custom.top-nav-collapse{
+        border-bottom: 1px solid rgba(255, 255, 0, 0.3);
+    }
+}
+
+
+//landing-page
+.intro{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: $light;
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: $dark;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.intro-body{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.brand-heading{
+    font-size: 40px;
+}
+.intro-text{
+    font-size: 18px;
+}
+@media(min-width:768px){
+    .intro{
+        height: 100%;
+        padding: 0;
+
+    }
+    .brand-heading{
+        font-size: 80px;
+    }
+    .intro-text{
+        font-size: 25px;
+
+    }
+}
+.content-section{
+    padding:60px 0 40px 0;
+}
+ //icon blocks
+ .block-icon-left{
+     overflow: auto;
+      
+    h1,h2,h3,h4,h5,h6{
+        margin: 0 0 10px 0;
+        padding: 0 ;
+        font-size: 18px;
+    }
+    .icon-content{
+        float: left;
+        width: 70%;
+    }
+    svg{
+        float: left;
+        width: 30%;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    p{
+        font-size: 12px;
+    }
+ }
+
+ .who-section{
+     width: 100%;
+     padding: 50px 0;
+     color: $light;
+     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+     background-color: $dark;
+     -moz-background-size:cover;
+     -webkit-background-size:cover;
+     -o-background-size:cover;
+     background-size:cover;
+
+
+ }
+ @media (min-width:768px){
+     .who-section{
+         padding: 100px 0;
+     }
+ }
+
+ //client section
+ #clients{
+     text-align: center;
+     padding-bottom: 50px;
+
+     img{
+         margin-right: 30px;
+         margin-bottom: 5px;
+     }
+ }
+
+
+ //contact section
+#contact{
+    background-color: $light;
+    background: $dark;
+    padding-bottom: 80px;
+    p{
+        color: $light;
+    }
+}
+
+//footer
+footer{
+    margin-top: 10px;
+    padding-top: 20px;
+    height: 50px;
+    text-align: center;
+}
+.page-scroll{
+    -webkit-transition-property: -webkit-transform ;
+    -webkit-transition-duration: 1s;
 }
