@@ -218,4 +218,6 @@ footer{
 .page-scroll{
     -webkit-transition-property: -webkit-transform ;
     -webkit-transition-duration: 1s;
+    transition-property: -webkit-transform ;
+    transition-duration: 1s;
 }
